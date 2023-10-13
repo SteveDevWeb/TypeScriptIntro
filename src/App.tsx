@@ -1,10 +1,9 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 
 function App() {
-  return (
-    <h1>Hello</h1>
-  );
+      const d = 'Max'
+      return <h1>Hsello {d}</h1>
 }
 
-export default App;
+export default App
