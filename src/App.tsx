@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header'
 import { Section } from './components/Section'
 import { Counter } from './components/Counter'
+import List from './components/List'
 import { useState } from 'react'
 
 
@@ -13,7 +14,8 @@ function App() {
           <>
                <Header title="Maxine" />
                <Section>This is my section</Section>
-               <Counter setCount={setCount}> Count is { count}</Counter>
+               <Counter setCount={setCount}> Count is {count}</Counter>
+               <List items={["Coffee", "Tacos", "Code"]} render={(item: string) => <span>{item}</span>}></List>
           </>
      )
 }
